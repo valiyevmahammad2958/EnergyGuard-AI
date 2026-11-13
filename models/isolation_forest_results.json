@@ -1,0 +1,26 @@
+{
+    "model": "IsolationForest",
+    "n_estimators": 100,
+    "max_samples": 256,
+    "threshold": 0.5234872299301997,
+    "validation_precision": 0.14424074714631616,
+    "validation_recall": 0.3432098765432099,
+    "validation_f1": 0.20311738918655625,
+    "validation_roc_auc": 0.7404005060094783,
+    "validation_average_precision": 0.14019809181022463,
+    "feature_columns": [
+        "oil_rate",
+        "gas_rate",
+        "water_rate",
+        "tubing_pressure",
+        "casing_pressure",
+        "temperature",
+        "choke_size",
+        "oil_rate_diff",
+        "pressure_diff",
+        "gas_rate_diff",
+        "pressure_rolling_mean",
+        "pressure_rolling_std",
+        "oil_rolling_mean"
+    ]
+}

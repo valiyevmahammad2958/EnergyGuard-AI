@@ -1,0 +1,32 @@
+{
+    "model": "PyTorchAutoencoder",
+    "architecture": [
+        13,
+        8,
+        4,
+        8,
+        13
+    ],
+    "training_epochs": 30,
+    "threshold": 0.4729794978281859,
+    "validation_precision": 0.7386243386243386,
+    "validation_recall": 0.574485596707819,
+    "validation_f1": 0.6462962962962963,
+    "validation_roc_auc": 0.8761032508892518,
+    "validation_average_precision": 0.5180891806831822,
+    "feature_columns": [
+        "oil_rate",
+        "gas_rate",
+        "water_rate",
+        "tubing_pressure",
+        "casing_pressure",
+        "temperature",
+        "choke_size",
+        "oil_rate_diff",
+        "pressure_diff",
+        "gas_rate_diff",
+        "pressure_rolling_mean",
+        "pressure_rolling_std",
+        "oil_rolling_mean"
+    ]
+}

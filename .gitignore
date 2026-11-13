@@ -1,0 +1,45 @@
+
+# Python virtual environment
+wellguard_env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Generated datasets
+data/raw/
+data/processed/
+
+# Trained models
+models/*.pkl
+models/*.pt
+models/*.pth
+models/*.joblib
+
+# MLflow experiments
+mlruns/
+mlartifacts/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Test caches
+.pytest_cache/
+.coverage
+
+# Allow deployment artifacts required by the API
+!models/autoencoder.pt
+!models/preprocessor.joblib
+
+# Local MLflow tracking database
+mlflow.db

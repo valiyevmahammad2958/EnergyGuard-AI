@@ -1,0 +1,9 @@
+{
+    "model": "max_absolute_zscore",
+    "threshold": 2.0,
+    "validation_precision": 0.23401313515381955,
+    "validation_recall": 0.557201646090535,
+    "validation_f1": 0.3296007789678676,
+    "validation_roc_auc": 0.7922113779892445,
+    "validation_average_precision": 0.2656318316571155
+}
