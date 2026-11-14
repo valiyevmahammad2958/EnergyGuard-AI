@@ -1,5 +1,5 @@
 
-name: EnergyGuard AI Tests
+name: EnergyGuard AI CI
 
 on:
   push:
@@ -28,3 +28,14 @@ jobs:
 
       - name: Run API tests
         run: python -m pytest tests/test_api.py -v
+
+  docker-build:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t energyguard-ai:latest .
