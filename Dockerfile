@@ -4,8 +4,12 @@ FROM python:3.12-slim
 WORKDIR /app
 
 # Install application dependencies
+
 COPY requirements-docker.txt .
+
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
 RUN pip install --no-cache-dir -r requirements-docker.txt
+
 
 # Copy application code and saved model artifacts
 COPY api/ ./api/
